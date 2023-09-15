@@ -8,7 +8,7 @@ actor DBank {
 
 
   stable var currentValue: Float=300; //variable //Stable means its a persistance variable
-  //currentValue:=100; //assigning value
+  //currentValue:=300; //assigning value
 
 
   stable var startTime = Time.now();
@@ -22,13 +22,14 @@ actor DBank {
   };
 
   public func withdraw(amount: Float){  //function input with natural number data type //
-    let tempValue: Float = currentValue -amount;
+    let tempValue: Float = currentValue - amount;
     if( tempValue>= 0) {
       currentValue-=amount;
       Debug.print(debug_show(currentValue));
     }
     else {
       Debug.print("withdrawing more than available balance");
+      Debug.print(debug_show(tempValue));
     }
   };
 
@@ -43,7 +44,7 @@ actor DBank {
     let timeELapsedNS = currentTime - startTime;
     let timeElapsedS = timeELapsedNS / 1000000000;
 
-    currentValue:=currentValue * (1.01**Float.fromInt(timeElapsedS));
+    currentValue:=currentValue * (1.00000000000000001**Float.fromInt(timeElapsedS));
 
     startTime:=currentTime;
 
