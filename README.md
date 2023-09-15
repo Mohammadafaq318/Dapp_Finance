@@ -42,6 +42,13 @@ npm start
 
 Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 8000.
 
+### Useful Developer Links
+
+https://smartcontracts.org/docs/introduction/welcome.html
+https://smartcontracts.org/docs/developers-guide/cli-reference.html
+https://forum.dfinity.org/
+https://discord.com/invite/cA7y6ezyE2
+
 ### Note on frontend environment variables
 
 If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
