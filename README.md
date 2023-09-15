@@ -44,10 +44,10 @@ Which will start a server at `http://localhost:8080`, proxying API requests to t
 
 ### Useful Developer Links
 
-https://smartcontracts.org/docs/introduction/welcome.html
-https://smartcontracts.org/docs/developers-guide/cli-reference.html
-https://forum.dfinity.org/
-https://discord.com/invite/cA7y6ezyE2
+- https://smartcontracts.org/docs/introduction/welcome.html
+- https://smartcontracts.org/docs/developers-guide/cli-reference.html
+- https://forum.dfinity.org/
+- https://discord.com/invite/cA7y6ezyE2
 
 ### Note on frontend environment variables
 
